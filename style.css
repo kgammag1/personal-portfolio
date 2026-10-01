@@ -1,0 +1,14 @@
+/* CSS by Kenny Gammage */
+
+/* Color Palette 
+deep black: #0D0D0D
+light gray: #F2F2F2
+tan: #8C8070
+burgundy: #8C493A
+pink: #D9ADA9
+*/
+
+/* Global (base) MOBILE FIRST */
+body{
+    background-color: #8C8070;
+}
