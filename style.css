@@ -4,7 +4,6 @@
 ebony clay: #282E40
 mirage blue: #151B26
 creamcan: #F2BA52
-saddlebrown: #593202
 golden yellow: #F29E38
 */
 
@@ -73,21 +72,27 @@ main{
 
 .project-card-row section{
     padding-top: 1rem;
-    background-color: #151B26;
+    background-color: #282E40;
     border: 1px solid #F29E38;
 }
 
-.project-card-row section:hover{
-    background-color: #F29E38;
-    color: #151B26;
-    border: 1px solid#151B26;
-}
-
 .project-card-row section p{
-    text-decoration: none;
     padding: 1rem;
     font-size: 1.25rem;
 } 
+
+.project-card-row section a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #F2BA52;
+    border-bottom: 2px solid #F29E38;
+}
+
+.contact-description{
+    padding-left: 2%;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+}
 
 .contact-card-row{
     display: grid;
@@ -99,21 +104,24 @@ main{
 }
 
 .contact-card-row section{
-    padding-top: 1rem;
-    background-color: #151B26;
+    padding-top: 1.5rem;
+    background-color: #282E40;
+    color: #F29E38;
     border: 1px solid #F29E38;
-}
-
-.contact-card-row section:hover{
-    background-color: #F29E38;
-    color: #151B26;
-    border: 1px solid#151B26;
 }
 
 .contact-card-row section p{
     padding: 1rem;
-    text-decoration: none;
     font-size: 1.25rem;
+}
+
+.contact-card-row section a{
+    text-decoration: none;
+    color: #F29E38;
+}
+
+.contact-card-row section a:hover{
+    border-bottom: 2px solid #F29E38;
 }
 
 h1{
@@ -135,6 +143,12 @@ p{
         padding-left: 1rem;
     }
 
+    .contact-card-row{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     nav ul {
         display: flex;
         justify-content: space-around;
@@ -143,6 +157,4 @@ p{
     .contact-card-row{
         grid-template-columns: repeat(4, 1fr);
     }
-
-
 }
