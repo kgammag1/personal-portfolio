@@ -1,14 +1,148 @@
 /* CSS by Kenny Gammage */
 
 /* Color Palette 
-deep black: #0D0D0D
-light gray: #F2F2F2
-tan: #8C8070
-burgundy: #8C493A
-pink: #D9ADA9
+ebony clay: #282E40
+mirage blue: #151B26
+creamcan: #F2BA52
+saddlebrown: #593202
+golden yellow: #F29E38
 */
 
 /* Global (base) MOBILE FIRST */
+
+header{
+    border-top: 1px solid #F29E38;
+    border-left: 1px solid #F29E38;
+    border-right: 1px solid #F29E38;
+    padding: .5rem;
+    text-align: center;
+}
+
 body{
-    background-color: #8C8070;
+    background-color: #282E40;
+    margin: .5rem;
+    padding: .5rem;
+    color: #F2BA52;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+nav {
+    background-color: #151B26;
+    border: 1px solid #F29E38;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #F2BA52;
+    border-bottom: 2px solid #F29E38;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    text-align: center;
+    display: block;
+    margin: .25rem;
+}
+
+nav a:hover {
+    color: #151B26;
+    background-color: #F29E38;
+    border-bottom: 2px solid #151B26;
+}
+
+main{
+    text-align: center;
+    border: 1px solid #F29E38; 
+    margin-top: 1rem;
+    background-color: #151B26;
+}
+
+.project-card-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.project-card-row section{
+    padding-top: 1rem;
+    background-color: #151B26;
+    border: 1px solid #F29E38;
+}
+
+.project-card-row section:hover{
+    background-color: #F29E38;
+    color: #151B26;
+    border: 1px solid#151B26;
+}
+
+.project-card-row section p{
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.25rem;
+} 
+
+.contact-card-row{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.contact-card-row section{
+    padding-top: 1rem;
+    background-color: #151B26;
+    border: 1px solid #F29E38;
+}
+
+.contact-card-row section:hover{
+    background-color: #F29E38;
+    color: #151B26;
+    border: 1px solid#151B26;
+}
+
+.contact-card-row section p{
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 800px) {
+
+    header{
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact-card-row{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
 }
